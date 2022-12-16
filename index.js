@@ -8,7 +8,7 @@ function background() {
    * Desenvolva uma função capaz de trocar a cor do fundo da página, ou seja,
    * alterar o background do body para a cor #BECCC3.
    */
-  document.body.style.backgroundColor = 'BECCC3';
+  document.body.style.backgroundColor = #BECCC3;
 }
 
 /**
@@ -58,12 +58,7 @@ function search() {
    * Além disso, a função removeAllChildren abaixo também pode ser útil para o desenvolvimento da solução
    */
   let firstName = document.getElementById('name').value;
-  let filteredData = data.filter(function (i) {
-    return (
-      firstName.toUppercase() ===
-      i.name.substring(0, firstName.length).toUpperCase()
-    );
-  });
+  let filteredData = data.filter(i=>firstName.toUppercase()===i.name.substring(0, firstName.length).toUpperCase());
   let search = document.getElementById('search');
 
   removeAllChildren(search);
