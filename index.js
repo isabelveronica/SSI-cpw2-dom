@@ -8,7 +8,7 @@ function background() {
    * Desenvolva uma função capaz de trocar a cor do fundo da página, ou seja,
    * alterar o background do body para a cor #BECCC3.
    */
-  document.body.style.backgroundColor = #BECCC3;
+  document.body.style.backgroundColor = 'BECCC3';
 }
 
 /**
