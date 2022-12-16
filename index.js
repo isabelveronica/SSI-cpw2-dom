@@ -58,7 +58,7 @@ function search() {
    * Além disso, a função removeAllChildren abaixo também pode ser útil para o desenvolvimento da solução
    */
   let firstName = document.getElementById("name").value;
-  let filteredData = data.filter(i=>firstName.toUppercase()===i.firstName.substring(0, firstName.length).toUpperCase());
+  let filteredData = data.filter((i) => i.firstName.toUppercase()===i.firstName.substring(0, firstName.length).toUpperCase());
   let search = document.getElementById('search');
 
   removeAllChildren(search);
